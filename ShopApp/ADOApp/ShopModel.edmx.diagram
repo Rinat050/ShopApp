@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d3deeff15d0e496381a1ec323ce7b125" Name="Diagram1" ZoomLevel="84">
+        <EntityTypeShape EntityType="ShopDBModel.Order_Items" Width="1.5" PointX="7.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopDBModel.Orders" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="ShopDBModel.FK_Order_Items_Orders" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ShopDBModel.Logins" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="ShopDBModel.Roles" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="ShopDBModel.Users" Width="1.5" PointX="3" PointY="4" />
+        <AssociationConnector Association="ShopDBModel.FK_Logins_Roles" />
+        <AssociationConnector Association="ShopDBModel.FK_Logins_Users" />
+        <AssociationConnector Association="ShopDBModel.FK_Orders_Users" />
+        <EntityTypeShape EntityType="ShopDBModel.Recept_Items" Width="1.5" PointX="9.625" PointY="7.5" />
+        <EntityTypeShape EntityType="ShopDBModel.Recepts" Width="1.5" PointX="7.25" PointY="10" />
+        <AssociationConnector Association="ShopDBModel.FK_Recept_Item_Recept" />
+        <EntityTypeShape EntityType="ShopDBModel.Items" Width="1.5" PointX="5.25" PointY="6.375" />
+        <AssociationConnector Association="ShopDBModel.FK_Order_Items_Items" />
+        <AssociationConnector Association="ShopDBModel.FK_Recept_Item_Items" />
+        <EntityTypeShape EntityType="ShopDBModel.Meals" Width="1.5" PointX="9.5" PointY="11.125" />
+        <AssociationConnector Association="ShopDBModel.FK_Meal_Recept" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
